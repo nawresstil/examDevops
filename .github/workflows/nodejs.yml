@@ -9,7 +9,7 @@ steps:
 - uses: actions/checkout@v2
 - name: Install dependencies
 run: npm install
-- name: Deploy to AWS EC2
+- name: Deploy to AWS EC2,
 uses: appleboy/scp-action@master
 with:
 host: ${{ secrets.REMOTE_HOST }}
